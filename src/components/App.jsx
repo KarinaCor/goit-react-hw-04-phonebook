@@ -30,7 +30,7 @@ useEffect(() => {
 const handleAddContact = data => {
   const isAvailable = contacts.some(contact => contact.name.toLowerCase() === data.name.toLowerCase());
   if (isAvailable) {
-    alert('$(data.name) is already in contacts.')
+    alert(`${data.name} is already in contacts.`);
     return
 }
 
